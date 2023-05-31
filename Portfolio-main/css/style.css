@@ -1,0 +1,342 @@
+/*-------navbar-----*/
+
+body{
+    width: 100%;
+    margin:0;
+    background-color: rgba(137, 167, 142, 0.331);
+}
+
+.liste-nav {
+    background: #333;
+    background: linear-gradient(to bottom, #333, #626262);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    
+    list-style-type: none;
+    position: fixed;
+    z-index: 200;
+    margin-top:-20px;
+}
+.item-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-nav1 {
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    margin-right:20%;
+}
+.item-nav1 a {
+    font-size: 25px;
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 20px;
+}
+.item-nav a {
+    font-size: 25px;
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.item-nav a::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 0%;
+    height: 2px;
+    background: #f5f1f1;
+    transition: all 0.2s ease-in-out;
+}
+.item-nav a:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+/*-----parallax----------*/
+.parallax{
+    /* background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.4), url('./parallax1.jpg')); */
+    background-image: url('./parallax1.jpg'),linear-gradient(rgba(255, 255, 255, 0.876),rgba(255,255,255,0.4)) ;
+    width:100%;
+    height:900px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.corps-parallax h1{
+    padding-left:5%;
+    padding-top: 8%;
+    color:white;
+}
+.corps-parallax img{
+    padding-left: 7%;
+    animation: arrive 5s ;
+}
+@keyframes arrive{
+    from {
+        margin-left:-500px;
+        
+    }
+}
+/*-----------projets------*/
+.projets{
+    background-image:linear-gradient(rgba(212,145,147,0.5),rgba(112, 110, 118, 0.821)), url('./programmation_web.png');
+    width:100%;
+    height:600px;
+    background-attachment: fixed;
+    
+}
+#projet{
+    
+    width:100%;
+    height:500px;
+    
+}
+.projets p{
+    
+    color:white;
+    
+}
+.projets h2{
+    font-size:2em;
+   text-align: center;
+   padding-top: 2%;
+   color:white;
+   margin-bottom: 2%;
+   }
+.projets button{
+    background-color: beige;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:200px;
+    height:30px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.projets button:hover{
+    background-color: #626262;
+    width:10%;
+    height:40px;
+    
+}
+.projets a:hover{
+    text-decoration: none;
+    color:white;
+
+}
+
+/*------------------formation------------*/
+.formation{
+    background-image:linear-gradient(rgba(212,145,147,0.5),rgba(112, 110, 118, 0.665)), url('./formation.jpg');
+    width:100%;
+    height:auto;
+    background-attachment: fixed; 
+    background-size: contain;
+}
+.formation h2{
+    font-size:2em;
+   text-align: center;
+   padding-top: 2%;
+   color:white;
+   margin-bottom: 2%;
+   }
+   .formation button{
+    background-color: beige;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:10%;
+    height:40px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.formation button:hover{
+    background-color: #d5abab;
+    width:10%;
+    height:40px;
+    
+}
+.formation a:hover{
+    text-decoration: none;
+    color:white;
+
+}
+.formation span{
+   
+    margin-left: 30%;
+    
+}
+.formation span img{
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*------------------autre------------*/
+
+.autre{
+    background-image:linear-gradient(rgba(212,145,147,0.5),rgba(112, 110, 118, 0.665)), url('./language.png');
+    width:100%;
+    height:auto;
+    background-attachment: fixed; 
+    background-position:right;
+    background-size: cover;
+}
+.autre h2{
+    font-size:2em;
+   text-align: center;
+   padding-top: 2%;
+   color:white;
+   margin-bottom: 2%;
+   }
+   .autre button{
+    background-color: beige;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:10%;
+    height:40px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.autre button:hover{
+    background-color: #d5abab;
+    width:10%;
+    height:40px;
+    
+}
+.autre a:hover{
+    text-decoration: none;
+    color:white;
+
+}
+.autre span{
+   
+    margin-left: 30%;
+    
+}
+.autre span img{
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*-------------Section Contact --------*/
+.contact{
+    background-image:linear-gradient(rgba(212,145,147,0.5),rgba(112, 110, 118, 0.665)), url('./autreFD.jpg');
+    width:100%;
+    height:auto;
+    background-attachment: fixed; 
+    background-position:right;
+    background-size: cover;
+}
+.contact h2{
+    font-size:2em;
+   text-align: center;
+   padding-top: 2%;
+   color:white;
+   margin-bottom: 2%;
+   }
+   
+
+.contact {
+    padding-bottom: 100px;
+  
+  }
+  .container-form {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .form-groupe {
+    position: relative;
+    margin-bottom: 45px;
+  }
+  .form-groupe label {
+    color: rgb(238, 229, 229);
+    font-size: 20px;
+  
+  }
+  .form-groupe input {
+    display:block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid rgb(242, 234, 234);
+    color: rgb(240, 229, 229);
+    font-size: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border: 3px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    resize: none; /* ne redimensionne pas la zone de texte par l utilisateur */
+    outline: none;
+    font-size: 20px;
+    background: #f1f1f1;
+  
+  }
+  .form-groupe:nth-child(4) {
+    margin-bottom: 25px;
+  
+  }
+  .form-groupe .button-sub {
+    display: block;
+    width: auto;
+    padding: 15px 60px;
+    border: 3px solid rgb(144,144,144);
+    border-radius: 9999px;
+    background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
+    background-size: 200%;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  
+  }
+  .form-groupe .button-sub:hover {
+    color: #fff;
+    background-position: 100%;
+    border: 3px solid #fff;
+  }
+  @media screen and(max-width: 1300px) {
+    .contact h2 {
+        padding: 70px 0 0 0;
+  
+    }
+    .container-form {
+        padding-left:  0;
+    }
+  }
+
+/*----------------footer------------*/
+.footer{
+    background-color: #626262;
+    width:100%;
+    height:60px;
+    position: relative;
+    margin-top:-20px;
+    
+}
+.footer p{
+   display:flex;
+   justify-content: center;
+padding-top:1em;
+   
+}
